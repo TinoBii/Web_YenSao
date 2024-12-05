@@ -1,0 +1,59 @@
+section.contact{
+    margin-top: 30px;
+}
+.contact .contact_nd{
+    display: flex;
+    margin-top: 30px;color: #000;
+    justify-content: space-between;
+    line-height: 1.6em;
+}
+
+.contact_box {
+    width: 50%;
+    line-height: 3em;
+}
+input.name,input.email,input.sdt,textarea.mota {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #0000001c;
+    box-shadow: inset 1px 0px 6px 0px #00000024;
+    margin-bottom: 10px;
+}
+li{
+    list-style-type: circle;;
+    list-style-position: inside;
+}
+.title {
+    font-size: 20px;
+}
+@media only screen and (min-width: 1367px) {
+    .min_wrap {
+        width:var(--max-wrap)
+    }
+    .dangky,.video {
+        width: 47%;
+        
+    }
+    
+}
+
+@media only screen and (max-width: 1280px) {
+    html,body {
+        -webkit-overflow-scrolling:touch;
+        overflow-x: hidden
+    }
+    .min_wrap {
+        width: calc(var(--full-wrap) - 20px);
+        margin-top: 10px;
+    }
+}
+@media only screen and (max-width: 840px) {
+ 
+    .contact .contact_nd {
+       flex-wrap: wrap;
+    }
+    .contact_box {
+        width: 100%;
+    }
+    
+}

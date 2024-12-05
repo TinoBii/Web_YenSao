@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery UI Tabs Example</title>
+
+    <!-- Tích hợp jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Tích hợp jQuery UI -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <style>
+        .ui-tabs .ui-tabs-nav {
+            padding: 0;
+        }
+        .ui-tabs .ui-tabs-nav li a {
+            padding: 10px;
+            margin-right: 5px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="tabs">
+        <ul>
+            <li><a href="#tab-1">Tab 1</a></li>
+            <li><a href="#tab-2">Tab 2</a></li>
+            <li><a href="#tab-3">Tab 3</a></li>
+        </ul>
+        <div id="tab-1">
+            <p>Đây là nội dung của Tab 1</p>
+        </div>
+        <div id="tab-2">
+            <p>Đây là nội dung của Tab 2</p>
+        </div>
+        <div id="tab-3">
+            <p>Đây là nội dung của Tab 3</p>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            $("#tabs").tabs();
+        });
+    </script>
+
+</body>
+</html>

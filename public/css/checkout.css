@@ -1,0 +1,71 @@
+ .section-head .section-title{ font-size: 16px;}
+ .section-head .section-title,  .section-head .section-title{
+    position: relative;
+    display: block;
+    font-size: 21px;
+    color: #272727;
+    text-transform: uppercase;
+    line-height: normal;
+    padding-bottom: 15px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #ccc;
+    text-align: left;
+    font-family: 'Roboto Regular';
+    font-weight: normal;
+}
+ .section-head .section-title:before,  .section-head .section-title:before{
+    position: absolute;
+    content: '';
+    bottom: -1px;
+    width: 100px;
+    height: 2px;
+    background: #2f93ca;
+    left: 0px;
+}
+ .form-row{ padding-bottom: 15px;}
+ .form-row label{ display: block; padding-bottom: 10px; font-family: 'Roboto Medium'; font-weight: normal;}
+ .form-row .form-col{ width: 50%; padding-right: 30px;}
+ .form-row .form-col:nth-child(2){ padding-right: 0;}
+ .form-row .form-col input[type="text"],input[type="password"],  .form-row .form-col input[type="email"],  .form-row .form-col input[type="tel"],  .form-row:nth-child(3) .form-col textarea{
+    width: 100%;
+    padding: 6px 12px;
+    border: 1px solid #cccccc;
+}
+ .form-row:nth-child(4) .form-col { width: 100%; padding-right: 0;}
+ .form-row:nth-child(5) .form-col textarea{ width: 100%;height: 150px;}
+ .form-row .form-col input[type="text"]:focus,  .form-row .form-col input[type="email"]:focus,  .form-row .form-col input[type="tel"]:focus,  .form-row:nth-child(3) .form-col textarea:focus{
+    border: 1px solid #777;
+}
+select {
+    width: 100%;
+    padding: 6px;
+    border: 1px solid #00000036;
+}
+
+ul#payment_methods li {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    
+}
+input#phone {
+    width: 100%;
+    padding: 6px;
+    border: 1px solid #00000036;
+}
+/* .clearfix {
+    justify-content: end;
+} */
+input#order-now {
+    width: 100%;
+    background: #ff6a00;
+}
+label.payment {
+    padding: 0 10px 0;
+}
+ul#payment_methods {
+    line-height: 1.7em;
+}
+.cart_product_price {
+    line-height: 1.5em;
+}

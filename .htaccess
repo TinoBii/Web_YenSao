@@ -1,0 +1,26 @@
+RewriteEngine On
+
+RewriteRule ^trang-chu.htm$ index.php?mod=home&action=index&slug=$1
+RewriteRule ^cua-hang.htm$ index.php?mod=product&action=index&slug=$1
+RewriteRule ^hang-moi-ve.htm$ index.php?mod=product&action=product_new&slug=$1
+RewriteRule ^tin-tuc.htm$ index.php?mod=page&action=blog&slug=$1
+RewriteRule ^lien-he.htm$ index.php?mod=page&action=contact&slug=$1
+
+RewriteRule ^([a-zA-Z0-9_-]+)sp([0-9]+).htm$ index.php?mod=product&action=detail_product&product_id=$2&slug=$1
+RewriteRule ^([a-zA-Z0-9_-]+)tt([0-9]+).htm$ index.php?mod=page&action=detail_post&post_id=$2&slug=$1
+RewriteRule ^tim-sp.htm$ index.php?mod=product&action=search_product&slug=$1
+
+RewriteRule ^gio-hang.htm$ index.php?mod=cart&action=index&slug=$1
+RewriteRule ^thanh-toan.htm$ index.php?mod=cart&action=checkout&slug=$1
+RewriteRule ^thanh-toan-thanh-cong.htm$ index.php?mod=cart&action=checkout_success&slug=$1
+
+RewriteRule ^danh-muc/([a-zA-Z0-9_-]+)-([0-9]+).htm$ index.php?mod=product&action=list_product_catid&cat_id=$2&slug=$1
+RewriteRule ^([a-zA-Z0-9_-]+)-dm([0-9]+).htm$ index.php?mod=product&action=list_product_catid&cat_id=$2&slug=$1
+RewriteRule ^mua-ngay/([a-zA-Z0-9_-]+)-([0-9]+).htm$ index.php?mod=cart&action=buynow&product_id=$2&slug=$1
+
+
+RewriteRule ^them-gio-hang-([0-9]+).htm$ index.php?mod=cart&action=add_cart&product_id=$2&slug=$1
+
+
+
+

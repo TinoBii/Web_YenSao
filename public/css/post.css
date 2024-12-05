@@ -1,0 +1,117 @@
+.content_product a {
+    font-weight: 600;
+    font-size: 16px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    line-height: 1.5em;
+}
+.content_product {
+    width: 50%;
+    text-align: left;
+}
+.content_product a{
+   font-weight: 600;
+   font-size: 16px;
+}
+.content{
+    color: #000;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    line-height: 1.5em;
+}
+.anh{
+    width: 48%;
+    height: 140px !important;
+    margin-right: 5px;
+}
+
+.icon-box-text .box {
+    width: 100%;
+    border:none
+}
+.category {
+    background: #f7f7f7;
+    padding: 10px;
+}
+
+.product_category .category {
+    width: 22%;
+}
+.product_category .list_product {
+    width: 76%;
+}
+.icon-box-text .box .logo {
+    width: 13%;
+}
+.icon-box-text .box h3 {
+    font-size: 16px;
+}
+.img_shop{
+    text-align: center;
+    line-height: 1.5em;
+}
+.product_category .category .title {
+    font-weight: bold;
+}
+
+.product_category .product .box_product {
+    width: 49%;
+    display: flex;
+}
+@media only screen and (min-width: 1367px) {
+    .min_wrap {
+        width:var(--max-wrap)
+    }
+    .dangky,.video {
+        width: 47%;
+        
+    }
+    
+}
+
+@media only screen and (max-width: 1280px) {
+    html,body {
+        -webkit-overflow-scrolling:touch;
+        overflow-x: hidden
+    }
+    .min_wrap {
+        width: calc(var(--full-wrap) - 20px);
+        margin-top: 10px;
+    }
+}
+@media only screen and (max-width: 840px) {
+    .product_category .category {
+        display: none;
+    }
+    .product_category .list_product {
+        width: 100%;
+    }
+    .product_category .product .box_product {
+        width: 49%;
+       flex-wrap: wrap;
+    }
+    .anh {
+        width: 100%;
+       height: 110px;
+    }
+    .content_product {
+        width: 100%;
+    }
+    .content{
+         -webkit-line-clamp: 2;
+    }
+    
+}
+@media only screen and (max-width: 420px) {
+    .anh {
+        width: 100%;
+        height: 110px !important;
+    }
+    img {
+        height: 100% !important;
+    }
+}
